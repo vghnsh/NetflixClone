@@ -1,0 +1,31 @@
+.row {
+  object-fit: contain;
+}
+h4 {
+  display: flex;
+  padding-left: 15px;
+  color: aliceblue;
+}
+.poster_row {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 15px;
+}
+.poster_row::-webkit-scrollbar {
+  display: none;
+}
+
+.poster_row img {
+  max-height: 270px;
+  width: 100%;
+  margin-right: 8px;
+  transition: transform 450ms;
+}
+.poster_row img:hover {
+  transform: scale(1.08);
+}
+
+.backdrop img {
+  max-height: 180px;
+}
